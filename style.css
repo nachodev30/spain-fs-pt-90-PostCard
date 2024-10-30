@@ -1,116 +1,119 @@
-/* Estilos para el selector universal (para todos los elementos) */
-
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
-
-/* Estilos para todo el cuerpo de la página */
 
 body {
-    background-color: lightslategray;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden;
 }
 
-/* Estilo para el encabezado de la página */
+.post-card {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    margin: 40px auto;
+}
 
-header {
+.post-header {
     width: 100%;
     height: 80px;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-header img {
-    width: 60px;
-}
-
-/* Estilos para todos los post */
-
-.post {
-    width: 500px;
-    height: 500px;
-    margin: 60px auto;
-}
-
-/* Estilos para todos los encabezados de los post */
-
-.encabezado {
-    width: 100%;
-    height: 60px;
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 25px;
 }
 
-/* Estilos para todos los h4 */
-
-h4 {
-    padding: 20px;
+.perfil {
+    display: flex;
 }
 
-/* Estilos para todas las fechas */
-
-.date {
-    padding: 20px;
+.perfil i {
+    margin-top: 5px;
+    font-size: 35px;
+    color: #DD4B25;
 }
 
-/* Estilos para todas las imagenes dentro de los post */
-
-.imagen {
-    width: 100%;
-    height: 350px;
+.perfil h4 {
+    color: black;
+    text-transform: uppercase;
 }
 
-.imagen img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos para todos los pie de foto de todos los post */
-
-.pieDeFoto {
-    width: 100%;
-    height: 88px;
-    background-color: white;
+.usuario {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    margin-left: 10px;
 }
 
-/* Estilos para todas las listas de los post */
+.usuario p {
+    font-size: 13px;
+}
 
-.lista {
+.ajustes {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ajustes i {
+    font-size: 30px;
+}
+
+.img-container {
+    width: 100%;
+    height: 330px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 330px;
+}
+
+/* Estilos para el footer del post-card */
+
+.post-footer {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-inter {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-.pieDeFoto ul {
-    padding-top: 5px;
-    padding-left: 10px;
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
 }
 
-.pieDeFoto li {
+.menu-inter-item1 {
     list-style: none;
-    padding-right: 15px;
+    font-size: 25px;
+    margin-right: 10px;
     cursor: pointer;
-    font-size: 18px;
 }
 
-/* Estilos para el comentario de cada foto */
+.menu-inter-item2 {
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+}
 
-.pieDeFoto p {
+.save {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    padding: 10px;
+    justify-content: flex-end;
+}
+
+.post-footer p {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
 }
